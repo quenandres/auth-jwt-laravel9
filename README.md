@@ -22,10 +22,7 @@ php artisan jwt:secret
 php artisan make:request Auth/LoginRequest
 ```
 
-``
+`Comando para crear archivo de middleware`
 ```bash
-```
-
-``
-```bash
+php artisan make:middleware JwtMiddleware
 ```
