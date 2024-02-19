@@ -10,6 +10,7 @@
         - MYSQL_DATABASE=${DB_DATABASE}
         - MYSQL_USER=${DB_USERNAME}
         - MYSQL_PASSWORD=${DB_PASSWORD}
+      restart: always
     api:
       image: bitnami/laravel:9
       container_name: api-lav8
@@ -23,6 +24,7 @@
         - DB_PASSWORD=${DB_PASSWORD}
       volumes:
         - ./api/:/app
+      restart: always
       depends_on:
         - db
     

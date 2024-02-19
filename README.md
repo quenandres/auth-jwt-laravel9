@@ -17,8 +17,9 @@ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServicePro
 php artisan jwt:secret
 ```
 
-``
+`Crea un archivo para hacer rutas de validación`
 ```bash
+php artisan make:request Auth/LoginRequest
 ```
 
 ``
